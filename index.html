@@ -5,13 +5,17 @@
     <title>GifTastic Cities</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
+    <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
 </head>
 
 <body>
 
+<h1>GifTastic Cities!</h1>
+
 <div class="container">
-<div id="topicsbuttons">
+<div id="topicsbuttons" >
+
+
 <!-- Buttons -->
 <button class="btn btn-info topic" data-name="Paris" style="margin: 5px;">Paris</button>
 <button class="btn btn-info topic" data-name="San Francisco" style="margin: 5px;">San Francisco</button>
@@ -25,25 +29,26 @@
 <button class="btn btn-info topic" data-name="Honolulu" style="margin: 5px;">Honlulu</button>
 <button class="btn btn-info topic" data-name="Berlin" style="margin: 5px;">Berlin</button>
 
+</div>
+</div>
+<!-- Where the gifs be pushed here -->
+<div id="gifs" style="float:left" ></div>
 
-</div>
-</div>
-<!-- Where the gifs will show -->
-<div id="gifs" style="float:left"></div>
-<!-- Add an topic section -->
-<div style="float:right; margin-top:90px;">
+<!-- Add a city section -->
+<div style="float:right; margin-top:90px; color: rgb(238, 189, 27);">
  <h4>Add a City</h4>
     <form id="gif-form">
         <label for="gif-input"></label>
         <input type="text" value="" id="gif-input"><br><br>
+
         <!--Generates the submit button-->
-        <input type="submit" name="Button" class="btn btn-success" id="theButton" style="margin-left:8px">
+        <input type="submit" name="Button" class="btn btn-primary" id="theButton" style="margin-left:8px">
     </form>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-  <!-- local javascript file -->
-  <script type="text/javascript" src="logic.js"></script>
+  <!--javascript file -->
+  <script type="text/javascript" src="assets/javascript/logic.js"></script>
 </body>
 </html>
