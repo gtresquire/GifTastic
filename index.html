@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>GifTastic Cities</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+</head>
+
+<body>
+
+<div class="container">
+<div id="topicsbuttons">
+<!-- Buttons -->
+<button class="btn btn-info topic" data-name="Paris" style="margin: 5px;">Paris</button>
+<button class="btn btn-info topic" data-name="San Francisco" style="margin: 5px;">San Francisco</button>
+<button class="btn btn-info topic" data-name="New York" style="margin: 5px;">New York</button>
+<button class="btn btn-info topic" data-name="London" style="margin: 5px;">London</button>
+<button class="btn btn-info topic" data-name="Austin" style="margin: 5px;">Austin</button>
+<button class="btn btn-info topic" data-name="Sydney" style="margin: 5px;">Sydney</button>
+<button class="btn btn-info topic" data-name="Shanghai" style="margin: 5px;">Shanghai</button>
+<button class="btn btn-info topic" data-name="Miami" style="margin: 5px;">Miami</button>
+<button class="btn btn-info topic" data-name="Seattle" style="margin: 5px;">Seattle</button>
+<button class="btn btn-info topic" data-name="Honolulu" style="margin: 5px;">Honlulu</button>
+<button class="btn btn-info topic" data-name="Berlin" style="margin: 5px;">Berlin</button>
+
+
+</div>
+</div>
+<!-- Where the gifs will show -->
+<div id="gifs" style="float:left"></div>
+<!-- Add an topic section -->
+<div style="float:right; margin-top:90px;">
+ <h4>Add a City</h4>
+    <form id="gif-form">
+        <label for="gif-input"></label>
+        <input type="text" value="" id="gif-input"><br><br>
+        <!--Generates the submit button-->
+        <input type="submit" name="Button" class="btn btn-success" id="theButton" style="margin-left:8px">
+    </form>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- local javascript file -->
+  <script type="text/javascript" src="logic.js"></script>
+</body>
+</html>
